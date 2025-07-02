@@ -1,0 +1,50 @@
+/* Reset default margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh; /* Full viewport height */
+}
+
+.greeting-bar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the bar horizontally */
+    background: rgba(25, 25, 25, 0.95);
+    border-bottom: 2px solid cyan;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
+    padding: 10px 20px;
+    text-align: center;
+    z-index: 1000;
+    animation: glow 1.5s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    min-width: 250px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 8px cyan;
+    margin: 0;
+    white-space: nowrap;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
+    }
+    to {
+        box-shadow: 0px 4px 20px rgba(0, 255, 255, 1);
+    }
+}

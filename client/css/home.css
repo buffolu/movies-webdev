@@ -1,0 +1,62 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    max-width: 400px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #004085;
+  }
+  
+  .btn-success:hover {
+    background-color: #155724;
+  }
+
+
+  
+  /* Particle effect container */
+  .particle-container {
+    position: absolute; /* Ensure particles are fixed in the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow interaction with elements under particles */
+    z-index: 0; /* Ensure particles stay in the background */
+  }
+  
+  .particle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: particleMovement 1s ease-out forwards; /* Smooth animation */
+  }
+  
+  /* Particle movement and fade-out animation */
+  @keyframes particleMovement {
+    0% {
+      transform: scale(1) translate(0, 0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.5) translate(var(--x), var(--y)); /* Move outward from cursor */
+      opacity: 0;
+    }
+  }
+  
