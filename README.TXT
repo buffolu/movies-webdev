@@ -1,33 +1,17 @@
 
+A web application for managing movies built with Node.js, Express, and MongoDB.
+
+you can search for a movie, add links for certain movie(public or private), add a movie to favorites, watch the favorites web and manage your movies there, etc..
+i used Node.js and MongoDB for data base(using mongoose).
 
 
-
-
-
-
-
-#disclaimer:
-    some things were used by chatGPT, mainly but not exclusivly UI.
-    duo to time shortage, not everything was implemented(admin page for example)
-    the project was long and hard, escpicially becuase the initial structure was not good,
-    and i had to write and restructure a lot of code, but this allowed me to learn how to approach
-    and prepare for projects in this scales.
-
-
-
-
-
-
-using mongoDB as data base(using mongoose);
 using MVC:
     views: js files.
     Controllers: handle logic of API calls.
     Models: defines  mongoDB Schemes.
 
 ------------------------------------------------------------------------------------------
-# Movies Project - Node.js & MongoDB
 
-A web application for managing movies built with Node.js, Express, and MongoDB.
 
 ## Prerequisites
 
@@ -68,7 +52,6 @@ The application will be available at: **http://localhost:3000**
 - `GET /api/movies` - Get movies as JSON
 - `POST /api/movies` - Create movie via API
 
-## Environment Variables
 
 ## Technologies Used
 
@@ -82,7 +65,7 @@ The application will be available at: **http://localhost:3000**
 
 ---
 
-**Happy coding! 🎬**
+
 ------------------------------------------------------------------------------------------
 Folders:
 
@@ -116,7 +99,5 @@ users: only registrated users can enter the main pages, must log in.
        
 
 
-TO-DO: 
-    admin page.
-    better UI.
+
     
