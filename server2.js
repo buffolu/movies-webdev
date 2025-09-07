@@ -5,6 +5,10 @@ const favoritesRoutes = require('./routes/favoritesRoutes');
 const authRoutes = require('./routes/authRoutes');
 const linkRoutes = require('./routes/linkRoutes');
 const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 
 
 const bodyParser = require('body-parser');
@@ -29,8 +33,7 @@ app.use( authRoutes);
 //
 
 app.use(express.static(path.join(__dirname, 'client')));
-
-const mongoUrl = 'mongodb+srv://igorhmelik123:thisismypassword123@cluster0.vmrxnwn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const mongoUrl = process.env.MONGO_URI;
 mongoose.connect(mongoUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true
