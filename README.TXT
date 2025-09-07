@@ -1,6 +1,6 @@
 # 🎜 Movie Manager App
 
-A **web application** for managing movies built with **Node.js, Express, and MongoDB**.
+A __web application__ for managing movies built with **Node.js, Express, and MongoDB**.
 
 ✨ Features:
 
