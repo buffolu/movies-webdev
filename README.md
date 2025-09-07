@@ -12,6 +12,22 @@ A **web application** for managing movies built with **Node.js, Express, and Mon
 
 ---
 
+### 📸 Screenshots
+
+Here are some screenshots of the application:
+
+**App Home Page**  
+<img width="400" alt="App Home Page" src="https://github.com/user-attachments/assets/29c3859e-c22f-4fcd-9e66-0ae1a290e240" />
+
+**Search for Movies**  
+<img width="600" alt="Search for Movies" src="https://github.com/user-attachments/assets/effa4738-9a83-43b9-bf90-c119ba8e8dee" />
+
+**Details for Movie Page**  
+<img width="600" alt="Movie Details Page" src="https://github.com/user-attachments/assets/1ed3cccd-9021-4c97-80bb-19b9872b1a4b" />
+
+---
+
+
 ## 🏧 Architecture (MVC Pattern)
 
 * 🔾 **Views** → JS files (UI rendering)
@@ -26,11 +42,11 @@ Make sure you have:
 
 * 🟢 **Node.js v14+** → [Download](https://nodejs.org/)
 * 📦 **npm** (comes with Node.js)
-* 🍃 **MongoDB Atlas account (Free)** → [Sign up](https://www.mongodb.com/atlas)
+* 🍃 **(optional)MongoDB Atlas account (Free)** → [Sign up](https://www.mongodb.com/atlas)
 
 ---
 
-## 🚀 Installation
+# HW Movies NodeJS - Setup Guide
 
 ### 1️⃣ Clone the Repository
 
@@ -45,11 +61,47 @@ cd hw-movies-nodejs
 npm install
 ```
 
-### 3️⃣ Start the Application
+### 3️⃣ Set Up Environment Variables
+
+1. In the project root, create a file named `.env`.  
+2. Add your MongoDB connection string and port:
+
+```env
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.abcd.mongodb.net/myDatabase?retryWrites=true&w=majority
+PORT=3000
+```
+
+- Replace `<username>` and `<password>` with your **MongoDB Atlas credentials**.  
+- **Optional:** You can use the provided test MongoDB connection instead:
+
+```env
+MONGO_URI=mongodb+srv://igorhmelik123:movies123123@movies.eistqro.mongodb.net/?retryWrites=true&w=majority&appName=Movies
+
+```
+
+> Using this allows you to run the app immediately without creating your own cluster.
+
+### 4️⃣ Start the Application
 
 ```bash
 npm start
 ```
+
+- You should see:  
+```
+MongoDB connected
+Server running on port 3000
+```
+
+### 5️⃣ Log In
+
+- Use your **own registered account** or the **test credentials**:  
+
+```
+Email: test@gmail.com
+Password: Test123123
+```
+
 
 🌍 The app will be running at: **[http://localhost:3000](http://localhost:3000)**
 
@@ -96,10 +148,7 @@ npm start
 ---
 
 ## 🔑 Main Components
-<img width="1637" height="747" alt="Screenshot 2025-09-07 184415" src="https://github.com/user-attachments/assets/690b3f38-7793-400b-ad36-5c270efede59" />
-<img width="1883" height="819" alt="Screenshot 2025-09-07 184355" src="https://github.com/user-attachments/assets/86899c15-b0b2-4a68-adc9-2fc17cf20b24" />
-<img width="1895" height="842" alt="Screenshot 2025-09-07 184343" src="https://github.com/user-attachments/assets/3a7ad1f2-7bee-4ea6-b73b-cb414313208c" />
-<img width="890" height="826" alt="Screenshot 2025-09-07 184130" src="https://github.com/user-attachments/assets/e8d0dad6-ff58-45fb-9f6a-437176f008b5" />
+
 
 ⭐ **Favorites**
 
