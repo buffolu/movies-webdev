@@ -76,10 +76,8 @@ npm start
 
 * ⚡ **Node.js** – JavaScript runtime
 * 🚏 **Express.js** – Web framework
-* 🍃 **MongoDB** – Database
-* 📘 **Mongoose** – ODM for MongoDB
+* 🍃 **MongoDB** + 📘 **Mongoose**– Database for managing users and users data
 * 🎨 **EJS/Handlebars** – Template engine (if applicable)
-* 🔄 **Nodemon** – Dev server with auto-reload
 
 ---
 
@@ -98,6 +96,10 @@ npm start
 ---
 
 ## 🔑 Main Components
+<img width="1637" height="747" alt="Screenshot 2025-09-07 184415" src="https://github.com/user-attachments/assets/690b3f38-7793-400b-ad36-5c270efede59" />
+<img width="1883" height="819" alt="Screenshot 2025-09-07 184355" src="https://github.com/user-attachments/assets/86899c15-b0b2-4a68-adc9-2fc17cf20b24" />
+<img width="1895" height="842" alt="Screenshot 2025-09-07 184343" src="https://github.com/user-attachments/assets/3a7ad1f2-7bee-4ea6-b73b-cb414313208c" />
+<img width="890" height="826" alt="Screenshot 2025-09-07 184130" src="https://github.com/user-attachments/assets/e8d0dad6-ff58-45fb-9f6a-437176f008b5" />
 
 ⭐ **Favorites**
 
