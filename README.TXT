@@ -1,103 +1,124 @@
+# 🎜 Movie Manager App
 
-A web application for managing movies built with Node.js, Express, and MongoDB.
+A **web application** for managing movies built with **Node.js, Express, and MongoDB**.
 
-you can search for a movie, add links for certain movie(public or private), add a movie to favorites, watch the favorites web and manage your movies there, etc..
-i used Node.js and MongoDB for data base(using mongoose).
+✨ Features:
 
-
-using MVC:
-    views: js files.
-    Controllers: handle logic of API calls.
-    Models: defines  mongoDB Schemes.
-
-------------------------------------------------------------------------------------------
-
-
-## Prerequisites
-
-Before running this project, make sure you have the following installed:
-
-- **Node.js** (v14 or higher) - [Download here](https://nodejs.org/)
-- **npm** (comes with Node.js)
-- **MongoDB Atlas account** (free) - [Sign up here](https://www.mongodb.com/atlas)
-
-## Installation
-
-### 1. Clone the Repository
-```bash
-	git clone https://github.com/yourusername/hw-movies-nodejs.git
-	cd hw-movies-nodejs
-```
-
-### 2. Install Dependencies
-```bash
-	npm install
-```
-
-how to start:
-npm start
-The application will be available at: **http://localhost:3000**
-
-
-## API Endpoints
-
-### Movies
-- `GET /` - Home page
-- `GET /movies` - Get all movies
-- `POST /movies` - Add new movie
-- `PUT /movies/:id` - Update movie
-- `DELETE /movies/:id` - Delete movie
-
-### API Routes
-- `GET /api/movies` - Get movies as JSON
-- `POST /api/movies` - Create movie via API
-
-
-## Technologies Used
-
-- **Node.js** - JavaScript runtime
-- **Express.js** - Web framework
-- **MongoDB** - Database
-- **Mongoose** - MongoDB object modeling
-- **EJS/Handlebars** - Template engine (if applicable)
-- **Nodemon** - Development server
-
+* 🔍 **Search** for movies
+* 🔗 **Add links** for a movie (public or private)
+* ⭐ **Add to favorites** and view them in a favorites page
+* 🛠️ **Manage movies** (CRUD operations)
+* 🔐 **Authentication** for registered users only
 
 ---
 
+## 🏧 Architecture (MVC Pattern)
 
-------------------------------------------------------------------------------------------
-Folders:
+* 🔾 **Views** → JS files (UI rendering)
+* 🧠 **Controllers** → Handle API logic
+* 🟔️ **Models** → Define MongoDB schemas (via Mongoose)
 
-ROUTES FILE:
-    contains all logic of routes of requests from client
-    authRoutes - login,register etc
-    favorites - adding or removing or updtating a favorite/link in userFavortiesJson
-    linkRoutes - adding,update,delete or fetch all
+---
 
-CLIENT:
-    all the logic and view of movies, details, favorites, login page, register page
+## ⚙️ Prerequisites
 
--------------------------------------------------------------------------------------------
+Make sure you have:
 
-Main components:
+* 🟢 **Node.js v14+** → [Download](https://nodejs.org/)
+* 📦 **npm** (comes with Node.js)
+* 🍃 **MongoDB Atlas account (Free)** → [Sign up](https://www.mongodb.com/atlas)
 
-Favorites: user can add a movie as Favorite, storing the data(as is) in mongoDb collection.
-           can see all Favorites in favorites Page.
-           TO DO : remove/add favortie from favorties page.
+---
 
+## 🚀 Installation
 
-Links: can add,remove,update links. can make links private/public
-       other users can see other users public links.
-       only the creator of the link whether it is public or private can modify it.
-       links can be viewed in details page for specific movie or favorties - all links to all movies;
-       Only avaiable for a movie toggled as Favorite.
-       TO-DO: ratings for links, clicks for links.
+### 1️⃣ Clone the Repository
 
-users: only registrated users can enter the main pages, must log in.
-       users can either log out in two ways:  manually(log out button) or exit the page.
-       
+```bash
+git clone https://github.com/yourusername/hw-movies-nodejs.git
+cd hw-movies-nodejs
+```
 
+### 2️⃣ Install Dependencies
 
+```bash
+npm install
+```
 
-    
+### 3️⃣ Start the Application
+
+```bash
+npm start
+```
+
+🌍 The app will be running at: **[http://localhost:3000](http://localhost:3000)**
+
+---
+
+## 📡 API Endpoints
+
+### 🎟 Movies
+
+* `GET /` → Home page
+* `GET /movies` → Get all movies
+* `POST /movies` → Add new movie
+* `PUT /movies/:id` → Update a movie
+* `DELETE /movies/:id` → Delete a movie
+
+### 🌐 API Routes
+
+* `GET /api/movies` → Get movies (JSON)
+* `POST /api/movies` → Add a movie via API
+
+---
+
+## 🛠️ Technologies Used
+
+* ⚡ **Node.js** – JavaScript runtime
+* 🚏 **Express.js** – Web framework
+* 🍃 **MongoDB** – Database
+* 📘 **Mongoose** – ODM for MongoDB
+* 🎨 **EJS/Handlebars** – Template engine (if applicable)
+* 🔄 **Nodemon** – Dev server with auto-reload
+
+---
+
+## 📂 Project Structure
+
+📁 **Routes**
+
+* `authRoutes` → login/register
+* `favorites` → add/remove/update favorites
+* `linkRoutes` → CRUD for movie links
+
+📁 **Client**
+
+* UI for movies, details, favorites, login, register
+
+---
+
+## 🔑 Main Components
+
+⭐ **Favorites**
+
+* Add/remove movies as favorites (stored in MongoDB)
+* View favorites page
+* ➡️ *TO DO*: Remove/add directly from favorites page
+
+🔗 **Links**
+
+* Add/remove/update links for movies
+* Links can be **public** or **private**
+* Only creator can edit/delete
+* Public links visible to all users
+* ➡️ *TO DO*: Add ratings + click tracking
+
+👤 **Users**
+
+* Only registered users can access main pages
+* Logout options:
+
+  * 🚪 Manual (Logout button)
+  * ❌ Auto (closing the page)
+
+---
